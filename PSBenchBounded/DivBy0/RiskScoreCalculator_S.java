@@ -1,4 +1,4 @@
-public class RiskScoreCalculator {
+public class RiskScoreCalculator_S {
 
     public static double calculateRisk(int age, int incidents) {
         if(age < 16 || age > 60){
@@ -28,11 +28,11 @@ public class RiskScoreCalculator {
         } else {
             score = score + 7;
             factor = factor - 1;
-            adjustment = score * 0.5;
+            adjustment = score/2 ;
             risky = adjustment < 5;
         }
 
-        double finalScore = adjustment + score * 0.3 + factor;
+        double finalScore = adjustment + score * 2 + factor;
         if (risky) {
             finalScore += 2.5;
         } else {

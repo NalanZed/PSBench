@@ -24,7 +24,7 @@ public class DensityEvaluator {
                     density = adjusted / divisor;
                 } else {
                     adjusted += 5;
-                    density = adjusted * 1.3;
+                    density = adjusted * 3;
                     valid = false;
                 }
 
