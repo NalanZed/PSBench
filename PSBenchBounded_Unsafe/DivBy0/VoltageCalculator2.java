@@ -48,7 +48,7 @@ public class VoltageCalculator2 {
             if (voltage < 30) {
                 voltage = voltage + 8;
             } else {
-                voltage = voltage * 0.92;
+                voltage = voltage * 2;
             }
         }
 
